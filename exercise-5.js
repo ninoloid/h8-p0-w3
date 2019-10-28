@@ -3,7 +3,7 @@ function palindrome(kata) {
   let kanan = 0;
   // you can only write your code here!
 
-  // ilangin spase
+  // ilangin spasi (optional untuk palindrome yg ga cuma 1 kata, contoh : ah m adam ha)
   kata = kata.split(' ').join('');
 
   // bagi index jadi 2, tengah ke kiri dan tengah ke kanan

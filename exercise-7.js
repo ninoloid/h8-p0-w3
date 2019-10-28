@@ -1,5 +1,5 @@
+// split jadiin array, udah gitu tinggal itung lengthnya
 const hitungJumlahKata = kalimat => kalimat.split(' ').length;
-
 
 // TEST CASES
 console.log(hitungJumlahKata('I have a dream')); // 4

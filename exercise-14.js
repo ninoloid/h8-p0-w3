@@ -4,6 +4,7 @@ function mengelompokkanAngka(arr) {
   return arrHasil;
 }
 
+// cari angka genap yg bukan kelipatan 3, tampung dalam array
 const genap = arr => {
   let arrGenap = [];
   for (let i = 0; i < arr.length; i++) {
@@ -14,6 +15,7 @@ const genap = arr => {
   return arrGenap;
 };
 
+// cari angka ganjil yg bukan kelipatan 3, tampung dalam array
 const ganjil = arr => {
   let arrGanjil = [];
   for (let i = 0; i < arr.length; i++) {
@@ -24,6 +26,7 @@ const ganjil = arr => {
   return arrGanjil;
 };
 
+// cari angka kelipatan 3, tampung dalam array
 const kelipatanTiga = arr => {
   let arrTiga = [];
   for (let i = 0; i < arr.length; i++) {

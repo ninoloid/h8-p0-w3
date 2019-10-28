@@ -1,14 +1,15 @@
 function perkalianUnik(arr) {
   let indeks = 0;
   let i = 0;
-  let mean = 1;
+  let kali = 1;
   let arr2 = [];
+  // untuk setiap index, kaliin dulu semua angkanya, kemudian bagi dgn angka di index lalu di push
   while (indeks < arr.length) {
     while (i < arr.length) {
-      mean *= arr[i];
+      kali *= arr[i];
       i++;
     }
-    arr2.push(mean / arr[indeks]);
+    arr2.push(kali / arr[indeks]);
     indeks++;
   }
   return arr2;

@@ -13,8 +13,8 @@ function indexOfX(arr) {
     arrX = [...new Set(arrTemp)];
   }
   arrX.sort();
-  switch (true) {
-    case arrX[0] === -1:
+  switch (arrX[0]) {
+    case -1:
       arrX.shift();
       break;
   }
@@ -31,8 +31,8 @@ function indexOfO(arr) {
     arrO = [...new Set(arrTemp)];
   }
   arrO.sort();
-  switch (true) {
-    case arrO[0] === -1:
+  switch (arrO[0]) {
+    case -1:
       arrO.shift();
       break;
   }
@@ -44,7 +44,6 @@ const cekIndex = arr => {
   let arrX = indexOfX(arr),
     arrO = indexOfO(arr),
     arrTemp = [];
-  // arrTempY = [];
   for (let i = 0; i < arrX.length; i++) {
     for (let j = 0; j < arrO.length; j++) {
       if (arrX[i] < arrO[j]) {
