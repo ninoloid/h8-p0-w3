@@ -1,5 +1,4 @@
 function groupAnimals(animals) {
-  // you can only write your code here!
   return arrBaru(animals);
 }
 

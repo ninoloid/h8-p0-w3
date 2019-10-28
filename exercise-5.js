@@ -1,7 +1,10 @@
+// cara gampangnya bisa di split ke array, reverse, join, cek sama ga dengan kata aslinya
+// bisa juga bikin variable baru, masukin huruf per huruf dari index paling belakang, cek sama ga dengan kata aslinya
+
+// cara manual, cek huruf per huruf dari tengah ke kiri dan tengah ke kanan sama atau engga
 function palindrome(kata) {
   let kiri = 0;
   let kanan = 0;
-  // you can only write your code here!
 
   // ilangin spasi (optional untuk palindrome yg ga cuma 1 kata, contoh : ah m adam ha)
   kata = kata.split(' ').join('');
@@ -25,6 +28,27 @@ function palindrome(kata) {
   }
   return kata[kiri] === kata[kanan] ? true : false;
 }
+
+
+// Pake split reverse join
+// const palindrome = kata => {
+//   // split join pertama buat ngilangin spasi, lalu split lg, reverse, kemudian join lg
+//   let arrKata = kata.split(' ').join('').split('').reverse().join('');
+//   return kata.split(' ').join('') === arrKata ? true : false;
+// }
+
+
+// Pake variable baru, masukkin huruf per huruf dari belakang
+// const palindrome = kata => {
+//   let temp = '';
+//   // ini buat ngilangin spasi biar bisa ngecek palindrome yang dipisah spasi
+//   let kataBaru = kata.split(' ').join('');
+//   for (let i = kataBaru.length - 1; i >= 0; i--) {
+//     temp += kataBaru[i];
+//   }
+//   return temp === kataBaru ? true : false;
+// }
+
 
 // TEST CASES
 console.log(palindrome('katak')); // true

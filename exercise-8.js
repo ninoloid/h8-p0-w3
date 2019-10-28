@@ -2,7 +2,7 @@ function pasanganTerbesar(num) {
   num = String(num);
   let temp = [];
   let sortNum = 0;
-  // ini i < num.length-1 karena akan di slice per 2 angka, kalau ga gitu angka terakhir berdiri sendiri jadi satuan
+  // ini num.length dikurang 1 karena akan di slice per 2 angka, kalau ga gitu angka terakhir berdiri sendiri jadi satuan
   for (let i = 0; i < num.length - 1; i++) {
     temp.push(num.slice(i, i + 2));
     sortNum = temp.sort();

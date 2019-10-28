@@ -9,39 +9,51 @@ const dataHandling2 = arr => {
 // ambil tanggal, split jadi array, dipake buat fungsi berikutnya
 const ambilTgl = arr => dataHandling2(arr)[3].split('/');
 
-// konversi angka bulan ke nama bulan pake if else
+// konversi angka bulan ke nama bulan pake switch case
 const namaBulan = arr => {
   let bulan = ambilTgl(arr);
-  if (bulan[1] === '04') {
-    bulan = 'April';
-  } else if (bulan[1] === '05') {
-    bulan = 'Mei';
-  } else if (bulan[1] === '06') {
-    bulan = 'Juni';
-  } else {
-    bulan = 'Kalau bulan bisa ngomong';
+  switch (bulan[1]) {
+    case '01':
+      bulan = 'Januari';
+      break;
+    case '02':
+      bulan = 'Februari';
+      break;
+    case '03':
+      bulan = 'Maret';
+      break;
+    case '04':
+      bulan = 'April';
+      break;
+    case '05':
+      bulan = 'Mei';
+      break;
+    case '06':
+      bulan = 'Juni';
+      break;
+    case '07':
+      bulan = 'April';
+      break;
+    case '08':
+      bulan = 'April';
+      break;
+    case '09':
+      bulan = 'April';
+      break;
+    case '10':
+      bulan = 'April';
+      break;
+    case '11':
+      bulan = 'November';
+      break;
+    case '12':
+      bulan = 'Desember';
+      break;
+    default:
+      bulan = 'Kalau bulan bisa ngomong';
   }
   return bulan;
-}
-
-// konversi angka bulan ke nama bulan pake switch case
-// const namaBulan = arr => {
-//   let bulan = ambilTgl(arr);
-//   switch (true) {
-//     case bulan[1] === '04':
-//       bulan = 'April';
-//       break;
-//     case bulan[1] === '05':
-//       bulan = 'Mei';
-//       break;
-//     case bulan[1] === '06':
-//       bulan = 'Juni';
-//       break;
-//     default:
-//       bulan = 'Kalau bulan bisa ngomong';
-//   }
-//   return bulan;
-// };
+};
 
 // return value setelah tgl diurutin secara descending (number)
 const urut = arr => ambilTgl(arr).sort(function (a, b) {

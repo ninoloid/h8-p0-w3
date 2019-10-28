@@ -1,5 +1,4 @@
 function targetTerdekat(arr) {
-  // you can only write your code here!
   return cekIndex(arr)[0] ? cekIndex(arr)[0] : 0;
 }
 
@@ -10,6 +9,7 @@ function indexOfX(arr) {
   for (let i = 0; i < arr.length; i++) {
     let a = arr.indexOf('x', i);
     arrTemp.push(a);
+    // bikin array baru dengan unique value
     arrX = [...new Set(arrTemp)];
   }
   arrX.sort();
@@ -28,6 +28,7 @@ function indexOfO(arr) {
   for (let i = 0; i < arr.length; i++) {
     let a = arr.indexOf('o', i);
     arrTemp.push(a);
+    // bikin array baru dengan unique value
     arrO = [...new Set(arrTemp)];
   }
   arrO.sort();

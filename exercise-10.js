@@ -3,7 +3,7 @@ function perkalianUnik(arr) {
   let i = 0;
   let kali = 1;
   let arr2 = [];
-  // untuk setiap index, kaliin dulu semua angkanya, kemudian bagi dgn angka di index lalu di push
+  // untuk setiap index, kaliin dulu semua angkanya, kemudian bagi dgn angka di index yg aktif, lalu di push
   while (indeks < arr.length) {
     while (i < arr.length) {
       kali *= arr[i];

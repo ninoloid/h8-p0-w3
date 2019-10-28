@@ -1,4 +1,8 @@
-// main function
+// ini juga pake cara manual, cek satu persatu huruf dari tengah ke kanan dan tengah ke kiri
+// cara gampangnya bisa di split ke array, reverse, join, cek sama ga dengan kata aslinya
+// bisa juga bikin variable baru, masukin huruf per huruf dari index paling belakang, cek sama ga dengan kata aslinya
+// sama kaya exercise-5
+
 function angkaPalindrome(num) {
   // you can only write your code here!
   return cekPalindrome(num + 1);
