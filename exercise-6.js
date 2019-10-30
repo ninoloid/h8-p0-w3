@@ -21,6 +21,7 @@ const cekPalindrome = num => {
   } else {
     kiri = Math.floor(num.length / 2) - 1;
     kanan = kiri + 2;
+    // gamasalah meskipun num.length = 1, karena median -1 dan median + 1 sama-sama mereturn undefined
   }
 
   // cocokkin index kiri dan index kanan
